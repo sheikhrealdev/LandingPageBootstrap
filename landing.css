@@ -1,0 +1,37 @@
+/* Custom Styles over Bootstrap */
+
+body {
+    background-color: #F7F4ED; /* Kept from your original design */
+    font-family: 'Times New Roman', Times, serif; /* Kept original typography */
+    overflow-x: hidden;
+}
+
+/* Specific Hero Text Styling */
+.hero-text {
+    font-size: clamp(3rem, 10vw, 120px); /* Responsive sizing for the 120px header */
+    line-height: 0.95;
+}
+
+/* Maintain your specific image dimensions */
+.hero-img {
+    max-height: 580px; 
+    width: auto;
+    object-fit: contain;
+}
+
+/* Flexbox helper for the hero height */
+.main-hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Remove default Bootstrap focus styles for a cleaner look */
+.btn:focus {
+    box-shadow: none;
+}
+
+/* Adjusting footer spacing to match your original design */
+footer .nav-link {
+    color: #000 !important;
+}
